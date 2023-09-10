@@ -43,3 +43,49 @@ a:hover {
     border-radius: 10px;
 }
 
+.city_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city_info h1 {
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.city_info_text {
+    text-align:left;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:oblique;
+    font-weight:lighter
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurants h1 {
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.restaurants a:hover {
+    color: blue;
+}
+
+.top_restaurants {
+    list-style-type: upper-roman;
+    font-family:monospace;
+    font-size: 30px;
+    font-style:italic;
+}
