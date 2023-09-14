@@ -8,21 +8,25 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 2px solid black;
+  border-top: 2px solid black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  height: 10vh;
 }
 
-a {
+.navbar_top > a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }
 
 .navbar_top a:hover {
-  color: darkorange;
+  color: blue;
 }
 
-.header {
+.city_info_heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,3 +116,20 @@ a {
 /* Public transport styling */
 
 /* Public transport styling ending */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  color: whitesmoke;
+  width: 100vw;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+footer a:hover {
+  color: blue;
+}
