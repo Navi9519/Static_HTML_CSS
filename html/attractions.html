@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourist attractions</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/javascript/script.js"></script>
   </head>
   <body class="attractions_body">
     <div class="navbar_top">
@@ -20,34 +21,48 @@
       <div class="stadshuset">
         <h2>CITY HALL</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          eligendi ab optio exercitationem quis dolorem voluptates eius,
-          officiis repudiandae aperiam? Odio itaque mollitia eveniet repellat
-          voluptatibus, quaerat magnam fuga expedita?
+          Under visningen får du se Stadshusets festsalar och ta del av
+          byggnadens storslagna miljö. Guiden berättar om historia, politik,
+          arkitektur och om Nobelfesten. Du får besöka rummen och lära dig mer
+          om denna ikoniska byggnad från 1923 och hur den har använts sedan dess
         </p>
         <button>Show more info</button>
       </div>
       <div class="abba">
         <h2>ABBA MUSEUM</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          eligendi ab optio exercitationem quis dolorem voluptates eius,
-          officiis repudiandae aperiam? Odio itaque mollitia eveniet repellat
-          voluptatibus, quaerat magnam fuga expedita?
+          ABBA The Museum is no ordinary museum. It’s not just about the
+          original costumes, gold records and so many other wonderful items of
+          memorabilia – it’s about you! There’s so much to experience… you’ll be
+          having the time of your life! Walk In. Dance Out.
         </p>
-        <button>Show more info</button>
+        <button class="open_modal_btn">Show more info</button>
       </div>
+
       <div class="bibliotek">
         <h2>CITY LIBRARY</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          eligendi ab optio exercitationem quis dolorem voluptates eius,
-          officiis repudiandae aperiam? Odio itaque mollitia eveniet repellat
-          voluptatibus, quaerat magnam fuga expedita?
+          Did you know that the library is always open? It is if you visit the
+          library online via a computer, mobile phone or tablet PC. At any time
+          of day or night, you can access reading recommendations or tips on
+          what’s happening at the various City of Stockholm libraries.
         </p>
         <button>Show more info</button>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="abba_modal hidden">
+      <h1>MODAL</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        ratione culpa vitae, modi omnis, reiciendis recusandae asperiores ipsum
+        quae labore unde rem consequuntur, dolore eaque quis totam accusamus
+        quia praesentium.
+      </p>
+      <button class="btn_close">Close Modal</button>
+    </div>
+    <!-- Modal -->
     <footer>
       <div class="contact_footer">
         <h3>Contact</h3>

@@ -6,7 +6,6 @@
 
 /* All pages styling */
 
-/* CSS */
 button {
   background-color: transparent;
   color: white;
@@ -217,6 +216,49 @@ footer a:hover {
   text-align: center;
 }
 
+/* Modal styling start */
+.hidden {
+  display: none !important;
+}
+.abba_modal {
+  background-image: url("/images/attractions_imgs/abba_modal_2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  padding: 1.3rem;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 0 auto;
+  z-index: 1;
+  color: white;
+}
+
+.abba_modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abba_modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.btn_close {
+}
+
+/* Modal styling end */
+
 .bibliotek {
   display: flex;
   flex-direction: column;
@@ -340,6 +382,16 @@ footer a:hover {
 
 .restaurants_centertext li {
   margin-top: 3em;
+}
+
+.restaurants_centertext a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.restaurants_centertext a:hover {
+  color: blue;
 }
 
 .restaurants_sidetext {
