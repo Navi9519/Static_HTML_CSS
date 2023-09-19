@@ -221,12 +221,14 @@ footer a:hover {
   display: none !important;
 }
 .abba_modal {
-  background-image: url("/images/attractions_imgs/abba_modal_2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/attractions_imgs/abba_modal_2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   height: 50em;
@@ -254,7 +256,20 @@ footer a:hover {
   font-size: 0.9em;
 }
 
-.btn_close {
+.abba_modal h1 {
+  color: white;
+  font-style: italic;
+}
+
+.abba_modal p {
+  color: white;
+  text-align: center;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
 }
 
 /* Modal styling end */
@@ -375,6 +390,11 @@ footer a:hover {
   font-weight: bold;
 }
 
+.restaurants_centertext h1 {
+  color: white;
+  font-style: italic;
+}
+
 .restaurants_centertext ol {
   display: flex;
   flex-direction: column;
@@ -387,7 +407,9 @@ footer a:hover {
 .restaurants_centertext a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
 }
 
 .restaurants_centertext a:hover {
@@ -401,6 +423,22 @@ footer a:hover {
   color: white;
   font-weight: bold;
   text-align: center;
+}
+
+.restaurants_sidetext h3 {
+  color: white;
+  font-style: italic;
+}
+
+.restaurants_sidetext p {
+  color: white;
+  text-align: center;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
 }
 
 /* Restaurants styling ending */
@@ -423,6 +461,14 @@ footer a:hover {
 .trafic {
   display: flex;
   text-align: center;
+  color: white;
+  text-align: center;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
 }
 
 .trafic img {
