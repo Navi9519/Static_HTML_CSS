@@ -1,21 +1,41 @@
-// Abba Modal window elements
+// City info background elements
+const cityDayImg = document.querySelector(".city_info");
+const cityNightImg = document.querySelector(".city_info_night");
+const imgBtn = document.querySelector(".btn_night");
+//------------------>
+// Change img functions
 
-const abbaModal = document.querySelector(".abba_modal");
-const openModalBtn = document.querySelector(".open_modal_btn");
-const closeModalBtn = document.querySelector(".btn_close");
-
-// Open modal function
-function openModal() {
-  console.log("Ivan");
-  abbaModal.classList.remove("hidden");
+function changeImg() {
+  if (imgBtn.textContent === "Stockholm by day") {
+    cityDayImg.classList.remove("hidden");
+    cityNightImg.classList.add("hidden");
+    imgBtn.textContent = "Stockholm by night";
+  } else {
+    cityDayImg.classList.add("hidden");
+    cityNightImg.classList.remove("hidden");
+    imgBtn.textContent = "Stockholm by day";
+  }
 }
 
-openModalBtn.addEventListener("click", openModal);
+imgBtn.addEventListener("click", changeImg);
+//------------------>
 
-// Close modal function
-function closeModal() {
-  console.log("hshdhshsd");
-  abbaModal.classList.add("hidden");
-}
+// // City info elements
+// const infoCityModal = document.querySelector(".info_city_modal");
+// const openModalBtn = document.querySelector(".open_city_btn");
+// const closeModalBtn = document.querySelector(".close_info_btn");
+// //------------------>
+// // Open City info modal function
+// function openCityInfoModal() {
+//   infoCityModal.classList.remove("hidden_2");
+//   console.log("dsdsdsds");
+// }
 
-closeModalBtn.addEventListener("click", closeModal);
+// infoCityModal.addEventListener("click", openCityInfoModal);
+// //------------------>
+// // Close city info modal function
+// function closeModalbtn() {
+//   infoCityModal.classList.add("hidden_2");
+// }
+
+// closeModalBtn.addEventListener("click", closeModal);

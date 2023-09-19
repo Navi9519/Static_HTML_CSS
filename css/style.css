@@ -153,6 +153,78 @@ footer a:hover {
   font-weight: lighter;
 }
 
+.city_info_night {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/stockholm_night2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.city_info_night button {
+  margin-top: 15em;
+  background-color: transparent;
+  color: white;
+  border: 0.1em solid white;
+  border-radius: 1em;
+}
+
+.city_info_night button:hover {
+  text-decoration: underline;
+}
+
+.city_info_night h1 {
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.city_info_modal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/attractions_imgs/stadshuset.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  padding: 1.3rem;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 0 auto;
+  z-index: 1;
+  color: white;
+}
+
+.city_info_modal h1 {
+  color: white;
+  font-style: italic;
+}
+
+.city_info_modal p {
+  color: white;
+  text-align: center;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
 /* City info styling ending */
 
 /* Tourist attractions styling */
@@ -218,8 +290,13 @@ footer a:hover {
 
 /* Modal styling start */
 .hidden {
+  display: none;
+}
+
+.hidden_2 {
   display: none !important;
 }
+
 .abba_modal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/images/attractions_imgs/abba_modal_2.jpeg");
@@ -241,19 +318,6 @@ footer a:hover {
   margin: 0 auto;
   z-index: 1;
   color: white;
-}
-
-.abba_modal .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.abba_modal input {
-  padding: 0.7rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9em;
 }
 
 .abba_modal h1 {
@@ -459,6 +523,7 @@ footer a:hover {
 }
 
 .trafic {
+  border-top: 0.1em solid white;
   display: flex;
   text-align: center;
   color: white;
