@@ -7,7 +7,6 @@ const closeModalBtn = document.querySelector(".btn_close");
 // Open modal function
 function openModal() {
   abbaModal.classList.remove("hidden_2");
-  console.log("dsdsdsds");
 }
 
 openModalBtn.addEventListener("click", openModal);
