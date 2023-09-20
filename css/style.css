@@ -6,6 +6,30 @@
 
 /* All pages styling */
 
+.navbar_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 20%;
+  margin-top: -0.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  height: 10vh;
+  width: 100vw;
+}
+
+.navbar_top > a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.navbar_top a:hover {
+  color: blue;
+}
+
 button {
   background-color: transparent;
   color: white;
@@ -79,36 +103,6 @@ footer a:hover {
   background-color: black;
 }
 
-.navbar_top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  border: 20%;
-  margin-top: -0.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: black;
-  height: 10vh;
-  width: 100vw;
-}
-
-.navbar_top > a {
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: whitesmoke;
-}
-
-.navbar_top a:hover {
-  color: blue;
-}
-
-/* .img_stockholm {
-  width: 100vw;
-  height: 100vh;
-  border-radius: 1.5em;
-} */
-
 .city_info {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/stockholm.jpeg");
@@ -122,7 +116,7 @@ footer a:hover {
   height: 100vh;
 }
 
-.city_info button {
+.open_city_btn {
   margin-top: 15em;
   background-color: transparent;
   color: white;
@@ -130,7 +124,7 @@ footer a:hover {
   border-radius: 1em;
 }
 
-.city_info button:hover {
+.open_city_btn button:hover {
   text-decoration: underline;
 }
 
@@ -541,3 +535,274 @@ footer a:hover {
 }
 
 /* Public transport styling ending */
+
+/* Responsive design */
+
+/* CITY INFO */
+@media screen and (max-width: 599px) {
+  .navbar_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    margin-top: 2rem;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .navbar_top > a {
+    font-weight: bold;
+    margin-top: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+
+  .navbar_top a:hover {
+    color: blue;
+  }
+
+  .all_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: white;
+  }
+
+  .city_info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/stockholm.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .city_info_night {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/stockholm_night2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .city_info_night button {
+    margin-top: 15em;
+    background-color: transparent;
+    color: white;
+    border: 0.1em solid white;
+    border-radius: 1em;
+  }
+
+  .city_info_night button:hover {
+    text-decoration: underline;
+  }
+
+  .city_info_night h1 {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .responsive_p_btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .open_city_btn {
+    margin-top: 15em;
+    background-color: transparent;
+    color: white;
+    border: 0.1em solid white;
+    border-radius: 1em;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hidden_2 {
+    display: none !important;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    width: 100vw;
+    margin-top: 10rem;
+    margin-bottom: -1em;
+  }
+
+  .attractions_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100vw;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 35rem;
+  }
+
+  .abba_modal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/images/attractions_imgs/abba_modal_2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    padding: 1.3rem;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 0 auto;
+    z-index: 1;
+    color: white;
+  }
+
+  .events_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100vw;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 45rem;
+  }
+
+  .restaurants_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/food_imgs/restaurant_img3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+  }
+
+  .restaurants_centertext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .restaurants_centertext h1 {
+    color: white;
+    font-style: italic;
+  }
+
+  .restaurants_centertext ol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .restaurants_centertext li {
+    margin-top: 3em;
+  }
+
+  .restaurants_centertext a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+  }
+
+  .restaurants_centertext a:hover {
+    color: blue;
+  }
+
+  .restaurants_sidetext {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .restaurants_sidetext h3 {
+    color: white;
+    font-style: italic;
+  }
+
+  .restaurants_sidetext p {
+    color: white;
+    text-align: center;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+  }
+
+  /* .res_footer {
+    margin-top: 20rem;
+  } */
+
+  .public_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/publictran_imgs/bakgrund.png");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 10vh;
+  }
+
+  .trafic {
+    border-top: 0.1em solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+  }
+}
